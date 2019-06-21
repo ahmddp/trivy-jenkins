@@ -10,8 +10,7 @@ def SetTagAndEnv()
 def BuildPublishDockerImage()
 {
     dir("${env.SERVICE_NAME}") {
-        echo "Image name: ${env.IMAGE_NAME}"
-        sh script:"./../cicd/createFullScanReport.sh ${env.IMAGE_NAME}"
+        sh script:"./../cicd/createArtifact.sh"
     }
 }
 
