@@ -25,13 +25,5 @@ pipeline {
                 }
             }
         }
-     
-        stage('Scan Docker image') {
-            steps {
-                script {
-                    functions.ScanDockerImage()
-                }
-            }
-        }
     }
 }
