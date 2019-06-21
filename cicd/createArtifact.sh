@@ -4,4 +4,4 @@
 
 FILENAME="FullScanReport.txt"
 
-echo "Artifact v1" > $FILENAME
+echo "Artifact $RANDOM" > $FILENAME
