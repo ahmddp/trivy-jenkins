@@ -10,7 +10,7 @@
 def BuildPublishDockerImage()
 {
 
-    sh script:"./../cicd/createArtifact.sh"
+    sh script:"./cicd/createArtifact.sh"
     archiveArtifacts artifacts: 'FullScanReport.txt', fingerprint: true
 }
 
