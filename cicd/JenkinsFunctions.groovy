@@ -11,6 +11,7 @@ def BuildPublishDockerImage()
 {
     dir("${env.SERVICE_NAME}") {
         sh script:"./../cicd/createArtifact.sh"
+        archiveArtifacts artifacts: 'FullScanReport.txt', fingerprint: true
     }
 }
 
