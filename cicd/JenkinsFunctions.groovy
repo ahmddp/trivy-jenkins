@@ -1,11 +1,11 @@
-def SetTagAndEnv()
-{
-    dir("${env.SERVICE_NAME}") {
-        script {
-            env.IMAGE_NAME = "nginx"
-        }
-    }
-}
+// def SetTagAndEnv()
+// {
+//     dir("${env.SERVICE_NAME}") {
+//         script {
+//             env.IMAGE_NAME = "nginx"
+//         }
+//     }
+// }
 
 def BuildPublishDockerImage()
 {

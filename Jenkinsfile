@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     functions = load "${WORKSPACE}/cicd/JenkinsFunctions.groovy"
-                    functions.SetTagAndEnv()
+                    // functions.SetTagAndEnv()
                 }
             }
         }        
