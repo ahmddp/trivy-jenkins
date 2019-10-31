@@ -27,7 +27,7 @@ FILENAME="FullScanReport.txt"
 docker run --rm \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v $HOME/Library/Caches:/root/.cache/ \
-    haubusacr.azurecr.io/security/trivy:c29f6f5 --exit-code 1 --severity UNKNOWN,LOW,MEDIUM,HIGH --quiet --skip-update $IMAGE > $FILENAME
+    aquasec/trivy:latest --exit-code 1 --severity UNKNOWN,LOW,MEDIUM,HIGH --quiet --skip-update $IMAGE > $FILENAME
 
 # Get the exit code
 EXITCODE=$?
